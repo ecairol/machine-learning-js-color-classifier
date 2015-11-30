@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>kNN Color Classifier</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style>
+		.cold{ background-color: #4287d2; color:#fff; }
+		.warm{ background-color: #da5647; color:#fff; }
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<h1>kNN Color Classifier</h1>
+		<hr>
+		<label>Pick a color</label>
+		<input type="color" id="colorpicker">
+		<button id="btnClassify">Classify</button>
+		<hr>
+		<h4>According to the kNN algorithm, the color you selected is <span id="colorClass"></span> </h4>
+
+		
+		<script src="jquery.js"></script>
+		<script src="data_var.js"></script>
+		<script src="kNN.js"></script>
+
+		<script src="index.js"></script>	
+	</div>
+	
+</body>
+</html>
